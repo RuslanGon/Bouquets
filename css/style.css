@@ -24,7 +24,6 @@ ul {
 .nav-list {
     display: flex;
     gap: 32px;
-    margin-right: 65px;
 }
 
 .nav-link {
