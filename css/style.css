@@ -1,8 +1,9 @@
 body {
-    background-color: aquamarine;
+    font-family: "Playfair Display", serif;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: black;
+    color: #f5ebeb;
 }
-
-
 
 a {
     text-decoration: none;
@@ -11,3 +12,78 @@ a {
 ul {
     list-style-type: none;
 }
+
+/* header */
+
+.header {
+    width: 1440px;
+    height: 1076px;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: rgb(241, 227, 42);
+}
+
+.header-div {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 25px 65px;
+}
+
+.round {
+position: absolute;
+left: 611px;
+top: 396px;
+}
+
+.flower-header {
+    position: absolute;
+    right: 0px;
+    top: 226px;
+}
+
+.header-title {
+    font-family: "Playfair Display", sans-serif;
+font-style: italic;
+font-weight: 500;
+font-size: 48px;
+line-height: 1.25;
+color: #a93b59;
+padding-left: 65px;
+/* padding-top: 109px; */
+}
+
+.header-text {
+    font-family: "Playfair Display", sans-serif;
+font-weight: 400;
+font-size: 86px;
+line-height: 0.69767;
+text-transform: uppercase;
+padding-left: 174px;
+
+}
+
+.header-span {
+    font-family: "Playfair Display", sans-serif;
+font-style: italic;
+font-weight: 500;
+font-size: 48px;
+line-height: 1.25;
+color: #a93b59;
+position: absolute;
+top: 300px;
+left: 524px;
+
+}
+
