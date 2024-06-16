@@ -43,7 +43,7 @@ padding: 25px 65px;
 
 .round {
 position: absolute;
-left: 611px;
+left: 641px;
 top: 396px;
 }
 
@@ -61,7 +61,6 @@ font-size: 48px;
 line-height: 1.25;
 color: #a93b59;
 padding-left: 65px;
-/* padding-top: 109px; */
 }
 
 .header-text {
@@ -84,6 +83,28 @@ color: #a93b59;
 position: absolute;
 top: 300px;
 left: 524px;
-
 }
 
+.text-p {
+    font-family: "Source Sans Pro", sans-serif;
+font-weight: 400;
+font-size: 24px;
+text-transform: capitalize;
+padding-left: 175px;
+padding-bottom: 42px;
+}
+
+.header-btn {
+    font-family: "Source Sans Pro", sans-serif;
+font-weight: 400;
+font-size: 24px;
+color: #f5ebeb;
+border-radius: 15px;
+padding: 16px 32px;
+width: 437px;
+height: 62px;
+background: #a93b59;
+padding: 16px 125px;
+margin-left: 174px;
+
+}
