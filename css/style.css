@@ -28,10 +28,29 @@ ul {
 
 .nav-link {
     color: #fff;
+    transition: .25s color cubic-bezier(.4,0,.2,1);
+    outline: none;
+    position: relative;
+}
+
+.nav-link:after {
+    content: "";
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    background-color: rgb(241, 227, 42);
+    transform: scaleX(0);
+    transition: .25s transform cubic-bezier(.4,0,.2,1);
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
 }
 
 .nav-link:hover {
-    color: rgb(241, 227, 42);
+    color:rgb(241, 227, 42) ;
 }
 
 .header-div {
