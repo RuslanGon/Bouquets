@@ -240,12 +240,18 @@ position: relative;
     right: -19.5px; 
     top: 50%; 
     transform: translateY(-50%); 
-   
+    height: 64px;
     width: 1px;
-    /* background-color: #fff; */
     border: 1px solid #444;
 }
 
-height: 64px;
-
-border: 1px solid #444;
+.prise-link:nth-child(-n+4)::after {
+    content: "";
+    position: absolute;
+    right: -19.5px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    height: 64px;
+    width: 1px;
+    border: 1px solid #444; 
+}
