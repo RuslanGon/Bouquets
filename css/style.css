@@ -175,3 +175,11 @@ color: #a93b59;
 padding-left: 349px;
 padding-top: 44px;
 }
+
+.katalog-line {
+border: 2px solid #a93b59;
+width: 491px;
+height: 0px;
+position: absolute;
+top: 79px;
+}
