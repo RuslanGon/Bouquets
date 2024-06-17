@@ -209,8 +209,43 @@ margin-top: 3px;
     border-radius: 15px;
 background-color: rgba(185, 106, 127, 0.5);
 position: absolute;
-top: 65px;
-
-
-
+top: 67px;
 }
+
+.prise-list {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    gap: 39px;
+    justify-content: space-between;
+}
+
+.prise-item {
+    font-family: "Source Sans Pro", sans-serif;
+font-weight: 300;
+font-size: 18px;
+color: #fff;
+position: relative;
+}
+
+.prise-link {
+    padding-left: 74px;
+    position: relative;
+}
+
+.prise-link::after {
+    content: "";
+    position: absolute;
+    right: -19.5px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+   
+    width: 1px;
+    /* background-color: #fff; */
+    border: 1px solid #444;
+}
+
+height: 64px;
+
+border: 1px solid #444;
