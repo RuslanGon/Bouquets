@@ -132,3 +132,24 @@ margin-left: 174px;
 color: #a93b59;
 background-color: #3e3939;
 }
+
+.head-list {
+    padding-top: 404px;
+    display: flex;
+    gap: 124px;
+    text-align: center;
+    justify-content: center;
+}
+
+.head-item {
+    width: 237px;
+}
+
+.head-text {
+font-family: "Source Sans Pro", sans-serif;
+font-weight: 400;
+font-size: 16px;
+text-align: center;
+color: #fff;
+margin-top: 2px;
+}
