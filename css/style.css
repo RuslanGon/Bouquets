@@ -183,3 +183,34 @@ height: 0px;
 position: absolute;
 top: 79px;
 }
+
+.katalog-box {
+    width: 1085px;
+    height: 132px;
+    background-color:rgba(185, 106, 127, 0.5); 
+    border-radius: 15px;
+    position: absolute;
+    top: 193px;
+    left: 249px;
+}
+
+.box-text {
+    font-family: "Playfair Display", sans-serif;
+font-weight: 600;
+font-size: 36px;
+text-align: center;
+color: #fff;
+margin-top: 3px;
+}
+
+.katalog-box-two {
+    width: 1085px;
+    height: 64px;
+    border-radius: 15px;
+background-color: rgba(185, 106, 127, 0.5);
+position: absolute;
+top: 65px;
+
+
+
+}
