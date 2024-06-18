@@ -191,7 +191,7 @@ top: 79px;
     border-radius: 15px;
     position: absolute;
     top: 193px;
-    left: 249px;
+    left: 210px;
 }
 
 .box-text {
@@ -257,7 +257,7 @@ position: relative;
 }
 
 .flover {
-    margin-top: 310px;
+    margin-top: 290px;
     position: relative;
 }
 
@@ -273,7 +273,7 @@ position: relative;
 .flower-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 30px 75px;
     justify-content: center;
 }
 
@@ -338,6 +338,7 @@ cursor: pointer;
 .flover-link2-div {
     display: flex;
     gap: 7px;
+
 }
 
 .flover-link2 {
@@ -361,4 +362,8 @@ cursor: pointer;
         text-transform: uppercase;
         color: #fff;
         padding-left: 10px;
+    }
+
+    .pp {
+        background-color: #55b8ff;
     }
