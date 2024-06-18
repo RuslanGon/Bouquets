@@ -581,6 +581,25 @@ text-align: center;
 color: #fff;
 }
 
+.tel-div {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.tel-text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.71);
+}
+
+.tel-text-span {
+color: #fff;
+font-weight: 700;
+}
+
 /* font-family: "Source Sans Pro", sans-serif;
 font-weight: 700;
 font-size: 20px;
@@ -589,3 +608,5 @@ color: rgba(255, 255, 255, 0.71);
 
 font-weight: 400;
 color: #fff; */
+
+/* 32 28 */
