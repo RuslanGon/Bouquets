@@ -518,7 +518,7 @@ display: flex;
 }
 
 .input {
-margin-top: 10px;
+margin-top: -5px;
     width: 416px;
     height: 70px;  
     border-radius: 15px;
