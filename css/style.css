@@ -410,3 +410,45 @@ margin-left: 949px;
 margin-top: -25px;
     margin-left: 947px;
 }
+
+.wrapper {
+    width: 1307px;
+height: 1484px;
+margin-left: 64px;
+border: 1px solid white;
+margin-top: 140px;
+padding-top: 20px;
+}
+
+.control-div {
+    display: flex;
+}
+
+.div-text {
+    margin-left: 110px;
+}
+
+.control-text {
+    font-family: "Source Sans Pro", sans-serif;
+font-weight: 400;
+font-size: 32px;
+color: #fff;
+margin-top: 69px;
+margin-bottom: 16px;
+}
+
+.control-p {
+    font-family: "Source Sans Pro", sans-serif;
+font-weight: 300;
+font-size: 20px;
+width: 524px;
+color: #949090;
+}
+
+.control-span {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+
+
+    color: #fff;
+}
