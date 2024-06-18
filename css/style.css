@@ -619,3 +619,16 @@ position: absolute;
 right: 0px;
 top: 1000px;
 }
+
+
+
+
+/* js */
+
+.modal-content {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
