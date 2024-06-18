@@ -367,3 +367,23 @@ cursor: pointer;
     .pp {
         background-color: #55b8ff;
     }
+
+    .flower-btn {
+text-align: center;
+font-family: "Source Sans Pro", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #fff;
+background-color: transparent;
+border-radius: 15px;
+border: 1px solid white;
+padding: 15px 30px;
+width: 232px;
+height: 50px;
+margin-top: 20px;
+margin-left: 629px;
+cursor: pointer;
+}
