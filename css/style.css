@@ -494,3 +494,12 @@ left: 0;
 top: 37px;
 }
 
+.div-form {
+    position: absolute;
+width: 1440px;
+height: 564px;
+border-radius: 10px;
+background: rgba(185, 106, 127, 0.7);
+margin-top: -910px;
+}
+
