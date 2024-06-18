@@ -305,3 +305,37 @@ color: #444;
     position: absolute;
     right: 15px;
 }
+
+.span-text-text {
+    font-family: "Source Sans Pro", sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.5;
+text-decoration: line-through;
+color: #000;
+margin-left: 15px;
+}
+
+.flover-link {
+    font-family: "Source Sans Pro", sans-serif;
+font-weight: 600;
+font-size: 15px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #fff;
+border: 2px solid #fff;
+border-radius: 22px;
+padding: 6px 10px;
+width: 84px;
+height: 31px;
+background: #a93b59;
+border: 2px solid white;
+position: absolute;
+left: 135px;
+top: 230px;
+
+
+
+
+
+}
