@@ -448,7 +448,9 @@ color: #949090;
 .control-span {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
-
-
     color: #fff;
+}
+
+.tet {
+    margin-top: 140px;
 }
