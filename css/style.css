@@ -353,37 +353,60 @@ cursor: pointer;
     top: 230px;
    padding-top: 15px;
     }
+.flover-link-p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 10px;
+}
 
-    .flover-link-p {
-        font-family: "Source Sans Pro", sans-serif;
-        font-weight: 600;
-        font-size: 15px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #fff;
-        padding-left: 10px;
-    }
+.pp {
+    background-color: #55b8ff;
+}
 
-    .pp {
-        background-color: #55b8ff;
-    }
+.flower-btn {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 15px 30px;
+    width: 232px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 629px;
+    cursor: pointer;
+}
 
-    .flower-btn {
-text-align: center;
-font-family: "Source Sans Pro", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: #fff;
-background-color: transparent;
-border-radius: 15px;
-border: 1px solid white;
-padding: 15px 30px;
-width: 232px;
-height: 50px;
-margin-top: 20px;
-margin-left: 629px;
-cursor: pointer;
+/* control */
+
+.control {
+    margin-top: 437px;
+    width: 1440px;
+    height: 1484px;
+}
+
+.control-title {
+    font-family: "Playfair Display", sans-serif;
+font-weight: 600;
+font-size: 36px;
+color: #a93b59;
+margin-left: 949px;
+}
+
+.control-line {
+    border: 2px solid #b02e51;
+    width: 494px;
+    height: 0px;
+margin-top: -25px;
+    margin-left: 947px;
 }
