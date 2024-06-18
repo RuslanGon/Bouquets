@@ -467,5 +467,30 @@ color: #949090;
     margin-right: 130px;
 }
 
+/* response */
 
+.response {
+    width: 1440px;
+    height: 1076px;
+    margin-top: 330px;
+    position: relative;
+}
+
+.response-title {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #a93b59;
+    margin-left: 64px;
+}
+
+.response-line {
+    border: 2px solid #b02e51;
+width: 823px;
+height: 0px;
+background: #a93b59;
+position: absolute;
+left: 0;
+top: 37px;
+}
 
