@@ -660,6 +660,23 @@ height: 20px;
     margin-bottom: 32px;
  }
 
+ .footer-div {
+display: flex;
+justify-content: space-between;
+padding-left: 176px;
+padding-right: 120px;
+ }
+
+ .fl {
+    font-size: 26px;
+ }
+
+ .cosial-link {
+    display: flex;
+    gap: 76px;
+    margin-left: -37px;
+    margin-top: 32px;
+ }
 
 
 
