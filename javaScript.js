@@ -50,7 +50,7 @@ new Swiper('.swiper', {
 
 const backdrop = document.querySelector('.hidden-div');
 const btnReq = document.querySelector('.js-btnReq');
-const closeBtn = document.querySelector('.link-close"');
+const closeBtn = document.querySelector('.link-close');
 
 
 
