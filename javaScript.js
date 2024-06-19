@@ -26,24 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Swiper
 
- new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
+new Swiper('.swiper', {
+    
+    direction: 'horizontal', 
     loop: true,
   
-    // If we need pagination
+    slidesPerView: 4, 
+    spaceBetween: 10, 
+  
     pagination: {
       el: '.swiper-pagination',
     },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
