@@ -625,11 +625,25 @@ top: 1000px;
 
 .client {
     width: 1440px;
-    height: 1076px;
+    height: 700px;
 }
 
+.swiper {
+    width: 1300px;
+    height: 358px;
+    margin-top: 60px;
+  }
 
 
+
+
+
+
+
+
+
+
+  
 /* js */
 
 .modal-content {
