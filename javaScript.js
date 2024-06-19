@@ -45,3 +45,32 @@ new Swiper('.swiper', {
     },
   
   });
+
+//   hidden-div show-modal"
+
+const backdrop = document.querySelector('.hidden-div')
+const btnReq = document.querySelector('.js-btnReq')
+
+function showmodal (e) {
+    backdrop.classList.add('show-modal')
+    document.addEventListener('keydown', onCloseModalEsc)
+    }
+    
+    function hidemodal () {
+    backdrop.classList.remove('show-modal')
+    document.removeEventListener('keydown', onCloseModalEsc)
+    }
+    
+    function onCloseModalEsc (e) {
+      if(e.code === 'Escape'){
+        hidemodal()
+      }
+    }
+
+    btnReq.addEventListener('click', show-modal);
+    closeBtn.addEventListener('click', show-modal);
+
+
+
+
+
