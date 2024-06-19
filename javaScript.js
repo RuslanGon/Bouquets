@@ -48,7 +48,6 @@ new Swiper('.swiper', {
 
 //   hidden-div show-modal"
 const backdrop = document.querySelector(".backdrop");
-// const backdrop = document.querySelector('.hidden-div');
 const btnReq = document.querySelector('.js-btnReq');
 const closeBtn = document.querySelector('.link-close');
 
@@ -57,11 +56,13 @@ const closeBtn = document.querySelector('.link-close');
 function showModal() {
     backdrop.classList.add('show-modal');
     document.addEventListener('keydown', onCloseModalEsc);
+    document.body.style.overflow = "hidden";
 }
 
 function hideModal() {
     backdrop.classList.remove('show-modal');
     document.removeEventListener('keydown', onCloseModalEsc);
+    document.body.style.overflow = "";
 }
 
 function onCloseModalEsc(e) {

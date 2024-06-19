@@ -745,6 +745,8 @@ color: #fff;
 position: absolute;
 right: 44px;
 top: 44px;
+background-color: transparent;
+border: none;
 }
 
 .hidden-title {
