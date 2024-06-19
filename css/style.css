@@ -709,13 +709,14 @@ color: #fff;
 /* hidden-div */
 
 .hidden-div {
-    /* display: none; */
  width: 1440px;
 height: 564px;
 border-radius: 10px;
 background: rgba(185, 106, 127, 0.7);
 text-align: center;
 position: relative;
+display: none;
+
 }
 
 .close-link {
@@ -749,7 +750,7 @@ width: 1340px;
 height: 0px;
 }
 
-.show-modal {
+show-modal {
     display: block;
 }
 /* js */
