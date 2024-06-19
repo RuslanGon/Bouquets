@@ -625,25 +625,44 @@ top: 1000px;
 
 .client {
     width: 1440px;
-    height: 700px;
+    height: 600px;
 }
 
 .swiper {
     width: 1300px;
-    height: 358px;
+    height: 400px;
     margin-top: 60px;
   }
 
+ .swiper-button-prev::after,
+ .swiper-button-next::after {
+    color: #B02E51;
+ }
+
+ .swiper-pagination-bullet {
+background-color: #fff;
+width: 20px;
+height: 20px;
+ }
+
+ .client-line {
+    border: 2px solid #b02e51;
+    width: 1400px;
+    margin-top: 120px;
+ }
+
+ .footer {
+    width: 1440px;
+    height: 346px;
+ }
+
+ .footer-item {
+    margin-bottom: 32px;
+ }
 
 
 
 
-
-
-
-
-
-  
 /* js */
 
 .modal-content {
