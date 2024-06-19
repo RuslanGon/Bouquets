@@ -232,6 +232,9 @@ position: relative;
 .prise-link {
     padding-left: 74px;
     position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .prise-link::after {
