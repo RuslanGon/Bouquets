@@ -220,6 +220,7 @@ top: 67px;
     padding-right: 25px;
     padding-top: 5px;
     position: relative;
+    gap: 170px;
 }
 
 .prise-item {
@@ -227,14 +228,12 @@ top: 67px;
 font-weight: 300;
 font-size: 18px;
 color: #fff;
-position: relative;
-padding-left: 30px;
-
 }
 
 .prise-link {
     position: absolute;
-    left: 150px;
+
+    /* left: 150px; */
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -787,7 +786,7 @@ height: 0px;
 .order {
     position: relative;
     z-index: 1000;
-    width: auto;
+    width: 190px;
     height: auto;
     padding: 16px 20px;
     background-color: rgba(185, 106, 127, 0.5);
@@ -810,10 +809,11 @@ height: 18px;
 }
 
 .order-close {
-    margin-left: 55px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
 }
 
 .order-btn {
