@@ -171,35 +171,69 @@ document.querySelector('.flower-btn').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const priseButtons = document.querySelectorAll('.prise-link');
     const closeButtons = document.querySelectorAll('.order-close');
+    const orderLists = document.querySelectorAll('.order');
 
     // Обработчик для кнопок prise-link
     priseButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(e) {
             const orderList = this.nextElementSibling;
 
-            // Закрываем все списки order
-            document.querySelectorAll('.order').forEach(order => {
-                if (order !== orderList) {
-                    order.style.display = 'none';
-                }
-            });
+            // Закрываем все списки order, кроме текущего
+            closeAllOrderLists(orderList);
 
-            // Показать/скрыть соответствующий список order
-            if (orderList.style.display === 'none' || orderList.style.display === '') {
-                orderList.style.display = 'block';
-            } else {
-                orderList.style.display = 'none';
-            }
+            // Показать/скрыть текущий список order
+            toggleOrderList(orderList);
+
+            // Остановить всплытие события, чтобы не вызывалось событие для закрытия при клике на document
+            e.stopPropagation();
         });
     });
 
     // Обработчик для кнопок order-close
     closeButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(e) {
             const orderList = this.closest('.order');
             if (orderList) {
                 orderList.style.display = 'none';
             }
+            e.stopPropagation();
         });
     });
+
+    // Закрытие списков при клике вне них
+    document.addEventListener('click', function(e) {
+        orderLists.forEach(list => {
+            // Проверяем, был ли клик вне списка или на саму кнопку открытия
+            if (!list.contains(e.target) && !e.target.classList.contains('prise-link')) {
+                list.style.display = 'none';
+            }
+        });
+    });
+
+    // Закрытие списка при нажатии Esc
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            orderLists.forEach(list => {
+                list.style.display = 'none';
+            });
+        }
+    });
+
+    // Функция для закрытия всех списков order, кроме заданного
+    function closeAllOrderLists(exceptList) {
+        orderLists.forEach(list => {
+            if (list !== exceptList) {
+                list.style.display = 'none';
+            }
+        });
+    }
+
+    // Функция для переключения видимости списка order
+    function toggleOrderList(orderList) {
+        if (orderList.style.display === 'none' || orderList.style.display === '') {
+            orderList.style.display = 'block';
+        } else {
+            orderList.style.display = 'none';
+        }
+    }
 });
