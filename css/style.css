@@ -216,11 +216,10 @@ top: 67px;
 
 .prise-list {
     display: flex;
-    padding-left: 25px;
+    padding-left: 25px; 
     padding-right: 25px;
     padding-top: 5px;
-    gap: 39px;
-    justify-content: space-between;
+    position: relative;
 }
 
 .prise-item {
@@ -229,16 +228,18 @@ font-weight: 300;
 font-size: 18px;
 color: #fff;
 position: relative;
+margin-left: 50px;
+
 }
 
 .prise-link {
-    padding-left: 74px;
-    position: relative;
+    position: absolute;
+    left: 150px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-
+/* 
 .prise-link::after {
     content: "";
     position: absolute;
@@ -248,9 +249,9 @@ position: relative;
     height: 64px;
     width: 1px;
     border: 1px solid #444;
-}
+} */
 
-.prise-link:nth-child(-n+4)::after {
+/* .prise-link:nth-child(-n+4)::after {
     content: "";
     position: absolute;
     right: -19.5px; 
@@ -259,7 +260,7 @@ position: relative;
     height: 64px;
     width: 1px;
     border: 1px solid #444; 
-}
+} */
 
 .flover {
     margin-top: 290px;
@@ -782,6 +783,17 @@ margin-bottom: 16px;
 width: 1340px;
 height: 0px;
 }
+
+.order {
+    position: relative;
+    z-index: 1000;
+    width: 200px;
+    height: 200px;
+    padding: 16px 20px;
+    background-color: rgba(185, 106, 127, 0.5);
+    border-radius: 10px;
+}
+
 
 
 /* js */
