@@ -237,3 +237,43 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+// ===========
+// Находим все изображения в слайдере
+const images = document.querySelectorAll('.swiper-slide img');
+
+// Находим модальное окно и его контент
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImage');
+
+// Функция для открытия модального окна с изображением
+function openModal(imageSrc) {
+    modal.style.display = 'block';
+    modalImg.src = imageSrc;
+}
+
+// Функция для закрытия модального окна
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+// Обработчики кликов по изображениям
+images.forEach(image => {
+    image.addEventListener('click', function() {
+        openModal(image.src);
+    });
+});
+
+// Обработчик клика по фону модального окна для его закрытия
+modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
+// Обработчик нажатия на клавишу Esc для закрытия модального окна
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
