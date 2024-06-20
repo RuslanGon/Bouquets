@@ -51,8 +51,6 @@ const backdrop = document.querySelector(".backdrop");
 const btnReq = document.querySelector('.js-btnReq');
 const closeBtn = document.querySelector('.link-close');
 
-
-
 function showModal() {
     backdrop.classList.add('show-modal');
     document.addEventListener('keydown', onCloseModalEsc);
@@ -74,6 +72,35 @@ function onCloseModalEsc(e) {
 btnReq.addEventListener('click', showModal);
 closeBtn.addEventListener('click', hideModal);
 
+// ==========
+
+document.querySelector('.flower-btn').addEventListener('click', function() {
+    const listItems = document.querySelectorAll('.flower-list .flower-item');
+    let listContent = '<ul class="flower-list">';
+
+    listItems.forEach(item => {
+        listContent += `<li class="flower-item">${item.innerHTML}</li>`;
+    });
+
+    listContent += '</ul>';
+
+    const instance = basicLightbox.create(`
+        <div class="modal">
+            ${listContent}
+        </div>
+    `, {
+        // closable: true, 
+        onShow: (instance) => {
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    instance.close();
+                }
+            });
+        }
+    });
+
+    instance.show();
+});
 
 
 
