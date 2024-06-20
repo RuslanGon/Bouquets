@@ -796,10 +796,11 @@ height: 0px;
 
 .modal {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     padding: 30px;
 }
 .modal img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
