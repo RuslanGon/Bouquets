@@ -787,11 +787,13 @@ height: 0px;
 .order {
     position: relative;
     z-index: 1000;
-    width: 200px;
+    width: auto;
     height: auto;
     padding: 16px 20px;
     background-color: rgba(185, 106, 127, 0.5);
     border-radius: 10px;
+    margin-left: -55px;
+    display: none;
 }
 
 .chech {
