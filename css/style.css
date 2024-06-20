@@ -808,10 +808,28 @@ height: 18px;
 }
 
 .order-close {
-    margin-left: 75px;
+    margin-left: 79px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.order-btn {
+margin-left: 37px;
+margin-top: 30px;
+border-radius: 5px;
+padding: 0px 10px;
+width: 120px;
+height: 32px;
+background: #a93b59;
+font-family: "Source Sans Pro", sans-serif;
+font-weight: 600;
+font-size: 16px;
+line-height: 2;
+text-align: center;
+color: #fff;
+text-align: center;
+cursor: pointer;
 }
 
 /* js */
