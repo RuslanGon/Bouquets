@@ -5,6 +5,8 @@ body {
     color: #f5ebeb;
 }
 
+
+
 a {
     text-decoration: none;
 }
@@ -390,6 +392,8 @@ cursor: pointer;
     margin-left: 629px;
     cursor: pointer;
 }
+
+
 
 /* control */
 
@@ -788,4 +792,8 @@ height: 0px;
     background-color: #fff;
     text-align: center;
     border-radius: 20px;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }

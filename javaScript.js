@@ -72,7 +72,7 @@ function onCloseModalEsc(e) {
 btnReq.addEventListener('click', showModal);
 closeBtn.addEventListener('click', hideModal);
 
-// ==========
+// ==========================
 
 document.querySelector('.flower-btn').addEventListener('click', function() {
     const listItems = document.querySelectorAll('.flower-list .flower-item');
@@ -89,18 +89,37 @@ document.querySelector('.flower-btn').addEventListener('click', function() {
             ${listContent}
         </div>
     `, {
-        // closable: true, 
         onShow: (instance) => {
-            document.addEventListener('keydown', (event) => {
+            document.body.classList.add('no-scroll');
+
+            const onEscapeKeydown = (event) => {
                 if (event.key === 'Escape') {
                     instance.close();
                 }
+            };
+
+            document.addEventListener('keydown', onEscapeKeydown);
+
+            const modalElement = instance.element().querySelector('.modal');
+            const onModalClick = (event) => {
+                if (!event.target.closest('.flower-item')) {
+                    instance.close();
+                }
+            };
+
+            modalElement.addEventListener('click', onModalClick);
+
+            instance.element().addEventListener('basicLightbox:close', () => {
+                document.body.classList.remove('no-scroll');
+                document.removeEventListener('keydown', onEscapeKeydown);
+                modalElement.removeEventListener('click', onModalClick);
             });
         }
     });
 
     instance.show();
 });
+
 
 
 
