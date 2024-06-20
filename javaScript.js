@@ -72,17 +72,62 @@ function onCloseModalEsc(e) {
 btnReq.addEventListener('click', showModal);
 closeBtn.addEventListener('click', hideModal);
 
-// ==========================
+// ==================================================
+
+// document.querySelector('.flower-btn').addEventListener('click', function() {
+//     const listItems = document.querySelectorAll('.flower-list .flower-item');
+//     let listContent = '<ul class="flower-list flo-list">';
+
+//     listItems.forEach(item => {
+//         listContent += `<li class="flower-item modal-flo">${item.innerHTML}</li>`;
+//     });
+
+//     listContent += '</ul>';
+
+//     const instance = basicLightbox.create(`
+//         <div class="modal">
+//             ${listContent}
+//         </div>
+//     `, {
+//         onShow: (instance) => {
+
+//             const onEscapeKeydown = (event) => {
+//                 if (event.key === 'Escape') {
+//                     instance.close();
+//                 }
+//             };
+
+//             document.addEventListener('keydown', onEscapeKeydown);
+
+//             const modalElement = instance.element().querySelector('.modal');
+//             const onModalClick = (event) => {
+//                 if (!event.target.closest('.flower-item')) {
+//                     instance.close();
+//                 }
+//             };
+
+//             modalElement.addEventListener('click', onModalClick);
+
+//             instance.element().addEventListener('basicLightbox:close', () => {
+//                 document.removeEventListener('keydown', onEscapeKeydown);
+//                 modalElement.removeEventListener('click', onModalClick);
+//             });
+//         }
+//     });
+
+//     instance.show();
+// });
+
+
+// ===
 
 document.querySelector('.flower-btn').addEventListener('click', function() {
-    const listItems = document.querySelectorAll('.flower-list .flower-item');
-    let listContent = '<ul class="flower-list">';
+    const listItems = document.querySelectorAll('.flower-list .flower-item img:not(.heart)');
+    let listContent = '';
 
     listItems.forEach(item => {
-        listContent += `<li class="flower-item">${item.innerHTML}</li>`;
+        listContent += `<img  src="${item.src}" alt="${item.alt}">`;
     });
-
-    listContent += '</ul>';
 
     const instance = basicLightbox.create(`
         <div class="modal">
@@ -102,15 +147,15 @@ document.querySelector('.flower-btn').addEventListener('click', function() {
 
             const modalElement = instance.element().querySelector('.modal');
             const onModalClick = (event) => {
-                if (!event.target.closest('.flower-item')) {
+                if (!event.target.closest('img')) {
                     instance.close();
                 }
             };
 
             modalElement.addEventListener('click', onModalClick);
 
+
             instance.element().addEventListener('basicLightbox:close', () => {
-                document.body.classList.remove('no-scroll');
                 document.removeEventListener('keydown', onEscapeKeydown);
                 modalElement.removeEventListener('click', onModalClick);
             });
@@ -119,8 +164,5 @@ document.querySelector('.flower-btn').addEventListener('click', function() {
 
     instance.show();
 });
-
-
-
 
 
