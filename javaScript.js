@@ -165,4 +165,41 @@ document.querySelector('.flower-btn').addEventListener('click', function() {
     instance.show();
 });
 
+// ==========
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const priseButtons = document.querySelectorAll('.prise-link');
+    const closeButtons = document.querySelectorAll('.order-close');
+
+    // Обработчик для кнопок prise-link
+    priseButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const orderList = this.nextElementSibling;
+
+            // Закрываем все списки order
+            document.querySelectorAll('.order').forEach(order => {
+                if (order !== orderList) {
+                    order.style.display = 'none';
+                }
+            });
+
+            // Показать/скрыть соответствующий список order
+            if (orderList.style.display === 'none' || orderList.style.display === '') {
+                orderList.style.display = 'block';
+            } else {
+                orderList.style.display = 'none';
+            }
+        });
+    });
+
+    // Обработчик для кнопок order-close
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const orderList = this.closest('.order');
+            if (orderList) {
+                orderList.style.display = 'none';
+            }
+        });
+    });
+});
