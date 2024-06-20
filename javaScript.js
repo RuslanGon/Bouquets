@@ -135,7 +135,6 @@ document.querySelector('.flower-btn').addEventListener('click', function() {
         </div>
     `, {
         onShow: (instance) => {
-            document.body.classList.add('no-scroll');
 
             const onEscapeKeydown = (event) => {
                 if (event.key === 'Escape') {
