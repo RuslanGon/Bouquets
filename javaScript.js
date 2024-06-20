@@ -47,6 +47,7 @@ new Swiper('.swiper', {
   });
 
 //   hidden-div show-modal"
+
 const backdrop = document.querySelector(".backdrop");
 const btnReq = document.querySelector('.js-btnReq');
 const closeBtn = document.querySelector('.link-close');
