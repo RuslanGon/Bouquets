@@ -798,11 +798,32 @@ height: 0px;
 }
 
 .chech {
-margin-right: 24px;
-border: 1px solid #fff;
-border-radius: 4px;
-width: 18px;
-height: 18px;
+    margin-right: 24px;
+    border: 1px solid #fff;
+    border-radius: 50%; /* Изменение радиуса для создания круглой формы */
+    width: 25px;
+    height: 25px;
+    appearance: none; /* Убираем стандартный стиль чекбокса */
+    -webkit-appearance: none; /* Убираем стандартный стиль чекбокса в WebKit-браузерах */
+    background-color: #fff; /* Белый фон */
+    cursor: pointer;
+    position: relative;
+}
+
+/* .chech:checked {
+    background-color: #000; 
+} */
+
+.chech:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 7px;
+    height: 12px;
+    border: 3px solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .order-item {
