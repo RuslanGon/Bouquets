@@ -277,3 +277,12 @@ document.addEventListener('keydown', function(event) {
         closeModal();
     }
 });
+
+// ================
+
+document.getElementById('map-link').addEventListener('click', function(event) {
+    event.preventDefault(); // предотвращаем стандартное поведение ссылки
+
+    // Здесь можно заменить ссылку на нужный сервис для отображения места на карте
+    window.open('https://www.google.com/maps/search/?api=1&query=Київ вул. Маріупольська, 14.', '_blank');
+});
