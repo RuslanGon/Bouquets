@@ -1,11 +1,8 @@
 body {
-    font-family: "Playfair Display", serif;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Playfair Display", "Source Sans 3", serif;
     background-color: black;
     color: #f5ebeb;
 }
-
-
 
 a {
     text-decoration: none;
@@ -817,6 +814,10 @@ height: 0px;
     margin-left: -55px;
     display: none;
     margin-top: 23px;
+}
+
+.order-list {
+margin-left: -40px;
 }
 
 .check {
