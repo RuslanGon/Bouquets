@@ -927,3 +927,15 @@ cursor: pointer;
 /* ========== */
 
 
+@media screen and (min-width: 480px) {
+    .header {
+        max-width: 480px;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .header {
+        max-width: 780px;
+    }
+}
+
