@@ -16,8 +16,8 @@ ul {
 
 .header {
     width: 1440px;
-    height: 1076px;
-    position: relative;
+    /* height: 1076px; */
+    /* position: relative; */
 }
 
 .nav-list {
