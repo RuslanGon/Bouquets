@@ -524,6 +524,12 @@ display: flex;
 
 }
 
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .input {
 margin-top: -5px;
     width: 416px;
@@ -535,20 +541,29 @@ font-weight: 700;
 font-size: 20px;
 color: #8d8d8d;
 padding-left: 38px;
-/* position: relative; */
+position: relative;
 }
 
-.man-img {
+.input::after {
+    content: "|";
     position: absolute;
-   right: 39px;
-    top: 22px;
+    right: 66px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px; 
+    color: rgb(228, 19, 19); 
+    pointer-events: none; 
 }
 
+.man-img,
 .tel-img {
     position: absolute;
     right: 39px;
-     top: 130px;
+    top: 22px;
+    /* transform: translateY(-50%); */
 }
+
+
 
 .input:focus {
     outline: none; 
