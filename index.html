@@ -42,9 +42,9 @@
             <h1 class="header-text"> Букети <span class="header-span">зі свіжих квітів</span> </h1>
             <p class="text-p">З доставкою по Києву протягом 1 години</p>
             <a class="header-btn" href="#">ЗАМОВИТИ КВІТИ</a>
-            <!-- <div id="modal-content" style="display: none;">
+            <div id="modal-content" style="display: none;">
                 <h1>Lena pena</h1>
-            </div> -->
+            </div>
         </div>
        <ul class="head-list">
         <li class="head-item">
@@ -341,13 +341,13 @@
         <div class="response-div">
             <div class="form-div">
                 <h4 class="form-title"> <span class="form-span">Відправте заявку  <br></span> і Вам зателефонують <br> протягом однієї хвилини</h4>
-                <form class="form" action="#">
+                <form class="form js-form" action="#">
                     <div class="input-container">
-                        <input class="input" type="text" placeholder="Ім’я">
+                        <input class="input" type="text" name="name" placeholder="Ім’я">
                         <img class="man-img" src="./images/man.png" alt="">
                     </div>
                     <div class="input-container">
-                        <input class="input" type="tel" placeholder="Телефон">
+                        <input class="input" type="tel" name="tel" placeholder="Телефон">
                         <img class="tel-img" src="./images/tel.png" alt="">
                     </div>
                     <button class="form-btn js-btnReq" type="button">Залишити заявку</button>
@@ -377,26 +377,24 @@
     <section class="client">
         <h2 class="visually-hidden">Наші клієнти</h2>
         <div class="swiper">
-            <div class="swiper-button-prev "></div>
+            <div class="swiper-button-prev"></div>
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./images/1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./images/2.png" alt=""></div>
-              <div class="swiper-slide"><img src="./images/3.png" alt=""></div>
-              <div class="swiper-slide"><img src="./images/4.png" alt=""></div>
-              <div class="swiper-slide"><img src="./images/1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./images/2.png" alt=""></div>
-              <div class="swiper-slide"><img src="./images/3.png" alt=""></div>
-              <div class="swiper-slide"><img src="./images/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/4.png" alt=""></div>
             </div>
-            <div class="swiper-pagination "></div>
-            
+            <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
-          </div>
-          <hr class="client-line">
-          <div id="imageModal" class="modal11">
-            <!-- <span class="close">&times;</span> -->
-            <!-- <img src="" class="modal-content" id="modalImage" alt=""> -->
-            <img src="placeholder.jpg" class="modal-content" id="modalImage" alt="Placeholder Image">
+        </div>
+        <hr class="client-line">
+        <div id="imageModal" class="modal11">
+            <span class="close">&times;</span>
+            <img src="" class="modal-content" id="modalImage" alt="Placeholder Image">
         </div>
     </section>
     <section class="footer">
