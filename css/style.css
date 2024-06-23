@@ -520,6 +520,7 @@ display: flex;
     display: flex;
     flex-direction: column;
     /* width: 100%; */
+    position: relative;
 
 }
 
@@ -534,6 +535,19 @@ font-weight: 700;
 font-size: 20px;
 color: #8d8d8d;
 padding-left: 38px;
+/* position: relative; */
+}
+
+.man-img {
+    position: absolute;
+   right: 39px;
+    top: 22px;
+}
+
+.tel-img {
+    position: absolute;
+    right: 39px;
+     top: 200px;
 }
 
 .input:focus {
