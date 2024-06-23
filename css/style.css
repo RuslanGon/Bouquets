@@ -674,7 +674,7 @@ top: 1000px;
 }
 
 .swiper {
-    width: 100%;
+    width: 1300px;
     height: 400px;
     margin-top: 60px;
     position: relative;
@@ -685,31 +685,9 @@ top: 1000px;
     color: #B02E51;
  }
 
-   .swiper-button-prev,
-        .swiper-button-next {
-            width: 44px;
-            height: 44px;
-
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 10; /* Повыше других элементов */
-        }
-
-        .swiper-button-prev {
-            left: 10px; /* Выход за пределы контейнера */
-        }
-
-        .swiper-button-next {
-            right: 10px; /* Выход за пределы контейнера */
-        }
- 
-
 
  .swiper-pagination-bullet {
-background-color: rgb(241, 227, 42);
+background-color: white;
 width: 15px;
 height: 15px;
  }
