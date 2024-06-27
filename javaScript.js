@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.flower-item').forEach(item => {
         item.addEventListener('click', () => {
             const content = `
-                <div class="modal-content">
+                <div class="modal-content1">
                     <img src="${item.querySelector('img:not(.heart)').src}" alt="">
-                    <p class="flower-text">${item.querySelector('.flower-text').innerHTML}</p>
-                    <span class="flower-span">${item.querySelector('.flower-span').innerHTML}</span>
+                    span>
                 </div>
             `;
             instance = basicLightbox.create(content);

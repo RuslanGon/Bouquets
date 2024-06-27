@@ -913,13 +913,18 @@ cursor: pointer;
 
 /* js */
 
-.modal-content {
+.modal-content1 {
     width: 400px;
     height: 450px;
     background-color: #fff;
-    text-align: center;
-    border-radius: 20px;
+  /* display: flex; */
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  height: 100%; /* Важно для вертикального центрирования */
+  text-align: center; /* Центрирование текста */
 }
+
+
 
 .modal {
     display: flex;
